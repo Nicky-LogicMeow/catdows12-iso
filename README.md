@@ -56,8 +56,8 @@ Bootable on both modern 64-bit UEFI firmware (`x86_64-efi`) and Legacy BIOS (`i3
 ## Hardware Specifications
 
 - Processor: 64-bit x86_64 dual-core or faster (Intel Core / Xeon, AMD Athlon / Ryzen)
-- RAM: Minimum 2 GB (4 GB recommended)
-- Graphics: Intel HD / Iris / Xe, AMD Radeon, or NVIDIA GeForce (GLX / Mesa acceleration supported)
+- RAM: Minimum 1 GB with automated transparent ZRAM memory compression (2 GB - 4 GB recommended)
+- Graphics: Intel HD / Iris / Xe, AMD Radeon, NVIDIA, or VM virtual GPU (Cirrus, Bochs, VirtIO, QXL, VMware SVGA) with 16 MB+ VRAM
 - Firmware: UEFI (Secure Boot disabled) or Legacy BIOS
 - Target Storage: 16 GB internal NVMe, SATA SSD, AHCI, IDE, or SCSI drive
 
@@ -66,10 +66,19 @@ Bootable on both modern 64-bit UEFI firmware (`x86_64-efi`) and Legacy BIOS (`i3
 ## Live Installer Environment
 
 Booting the ISO launches directly into the Catdows 12 Live Setup environment:
-- Solid Setup Blue background (`#004e98`)
-- Zero taskbar memory footprint (desktop shell suppressed)
-- Setup Wizard automatically opens front and center
-- Installs to selected disk with automatic GPT partitioning, dual UEFI + BIOS GRUB bootloader, and proprietary driver detection.
+- Solid vibrant Windows Setup Blue background (`#005a9e`)
+- Minimal memory footprint: runs smoothly in VMs with 1 GB RAM and 16 MB-32 MB VRAM
+- Setup Wizard automatically opens front and center with high-speed parallel disk extraction
+- Dual UEFI + BIOS GRUB bootloader installation with persistent UUID fstab generation
+
+---
+
+## In-Place GitHub System Updates
+
+Installed systems include the native Catdows Update Wizard (`catapps update` / `cat-update`):
+- Connects directly to GitHub Releases
+- Retrieves and extracts updated shell binaries, hardware supervisors, and installer tools
+- Preserves user configuration and home directory data
 
 ---
 
