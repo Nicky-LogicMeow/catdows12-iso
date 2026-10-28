@@ -6,6 +6,30 @@ A single universal hybrid bootable ISO (`catdows12-24h2.iso`) is provided for ph
 
 ---
 
+## Screenshots
+
+| Desktop | Centered Start Menu |
+|---|---|
+| ![desktop](screenshots/screenshot-01-desktop.png) | ![start menu](screenshots/screenshot-02-start-menu.png) |
+
+| Settings | Task Manager |
+|---|---|
+| ![settings](screenshots/screenshot-03-settings.png) | ![task manager](screenshots/screenshot-04-task-manager.png) |
+
+| File Explorer | Terminal |
+|---|---|
+| ![file explorer](screenshots/screenshot-05-file-explorer.png) | ![terminal](screenshots/screenshot-06-terminal.png) |
+
+| Quick Settings | Calendar & Clock |
+|---|---|
+| ![quick settings](screenshots/screenshot-07-quick-settings.png) | ![calendar](screenshots/screenshot-08-calendar-clock.png) |
+
+| Lock Screen | Live Installer |
+|---|---|
+| ![lock screen](screenshots/screenshot-09-lock-screen.png) | ![live installer](screenshots/screenshot-10-live-installer.png) |
+
+---
+
 ## Release Images
 
 | Release File | Format | Compatibility | Purpose |
